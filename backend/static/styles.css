@@ -1,0 +1,100 @@
+/* Fuente base y fondo */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.contenedor {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-left: 8px solid #2e7d32; /* verde institucional */
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  color: black; /* verde */
+  margin-bottom: 20px;
+}
+
+/* Estilos del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Etiquetas */
+label {
+  font-weight: bold;
+  margin-top: 12px;
+  color: #000000;
+}
+
+/* Inputs y selects */
+input, select {
+  padding: 10px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+input:focus, select:focus {
+  border-color: #2e7d32;
+  outline: none;
+}
+
+/* Botón */
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #ff6f00; /* naranjado */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #e65100;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .contenedor {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  input, select, button {
+    font-size: 0.95rem;
+  }
+}
+
+.titulo-con-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.titulo-con-logo img {
+  max-width: 60px;
+  height: auto;
+}

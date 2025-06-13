@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Socios - JAC Pilsen</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="contenedor">
+    <div class="titulo-con-logo">
+      <img src="{{ url_for('static', filename='logo_jac.png') }}" alt="Logo JAC">
+      <h1>Registro de Socios – JAC Pilsen</h1>
+    </div>
+    <form id="formularioSocio">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required>
+
+      <label for="tipo_documento">Tipo de documento:</label>
+      <select id="tipo_documento" name="tipo_documento" required>
+        <option value="">Seleccione...</option>
+        <option value="CC">Cédula de Ciudadanía</option>
+        <option value="TI">Tarjeta de Identidad</option>
+        <option value="CE">Cédula de Extranjería</option>
+        <option value="Pasaporte">Pasaporte</option>
+        <option value="Otro">Otro</option>
+      </select>
+
+      <label for="numero_documento">Número de documento:</label>
+      <input type="text" id="numero_documento" name="numero_documento" required>
+
+      <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="text" id="telefono" name="telefono" required>
+
+      <label for="correo">Correo (opcional):</label>
+      <input type="email" id="correo" name="correo">
+
+      <label for="fecha_ingreso">Fecha de ingreso a la JAC:</label>
+      <input type="date" id="fecha_ingreso" name="fecha_ingreso" required>
+
+      <label for="estado">Estado:</label>
+      <select id="estado" name="estado" required>
+        <option value="">Seleccione...</option>
+        <option value="Activo">Activo</option>
+        <option value="Inactivo">Inactivo</option>
+        <option value="Retirado">Retirado</option>
+      </select>
+
+      <label for="rol">Rol en la JAC:</label>
+      <select id="rol" name="rol" required>
+        <option value="">Seleccione...</option>
+        <option value="Socio">Socio</option>
+        <option value="Presidente">Presidente</option>
+        <option value="Vicepresidente">Vicepresidente</option>
+        <option value="Secretario">Secretario</option>
+        <option value="Tesorero">Tesorero</option>
+        <option value="Vocal">Vocal</option>
+        <option value="Otro">Otro</option>
+      </select>
+
+      <button type="submit">Registrar socio</button>
+    </form>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
