@@ -4,6 +4,7 @@ body {
   background-color: #f9f9f9;
   margin: 0;
   padding: 0;
+  line-height: 1.2;
 }
 
 /* Contenedor principal */
@@ -14,14 +15,7 @@ body {
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  border-left: 8px solid #2e7d32; /* verde institucional */
-}
-
-/* Título */
-h1 {
-  text-align: center;
-  color: black; /* verde */
-  margin-bottom: 20px;
+  border-left: 8px solid #2e7d32;
 }
 
 /* Estilos del formulario */
@@ -30,10 +24,23 @@ form {
   flex-direction: column;
 }
 
+/* Logo dentro del formulario */
+.logo-formulario {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  object-fit: cover;
+  line-height: 0;
+  font-size: 0;
+}
+
 /* Etiquetas */
 label {
   font-weight: bold;
-  margin-top: 12px;
+  margin: 6px 0 2px 0;
   color: #000000;
 }
 
@@ -56,7 +63,7 @@ input:focus, select:focus {
 button {
   margin-top: 20px;
   padding: 12px;
-  background-color: #ff6f00; /* naranjado */
+  background-color: #ff6f00;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -77,24 +84,7 @@ button:hover {
     padding: 20px;
   }
 
-  h1 {
-    font-size: 1.4rem;
-  }
-
   input, select, button {
     font-size: 0.95rem;
   }
-}
-
-.titulo-con-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.titulo-con-logo img {
-  max-width: 60px;
-  height: auto;
 }

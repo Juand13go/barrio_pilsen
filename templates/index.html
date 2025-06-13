@@ -7,11 +7,9 @@
 </head>
 <body>
   <div class="contenedor">
-    <div class="titulo-con-logo">
-      <img src="{{ url_for('static', filename='logo_jac.png') }}" alt="Logo JAC">
-      <h1>Registro de Socios – JAC Pilsen</h1>
-    </div>
     <form id="formularioSocio">
+      <img src="{{ url_for('static', filename='logo1.png') }}" alt="Encabezado JAC Pilsen" class="logo-formulario">
+
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" required>
 
